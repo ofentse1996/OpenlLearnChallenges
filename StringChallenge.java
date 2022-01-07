@@ -22,7 +22,7 @@ public class StringChallenge{
 			int temp;
 			for (int i= 0;i<intArray.length  ;i++ ) {
 				for (int j = i+1;j<intArray.length ; j++) {
-					if(intArray[i]>intArray[j]){
+					if(intArray[i]<intArray[j]){
 						temp = intArray[i];
 						intArray[i] = intArray[j];
 						intArray[j] = temp;
@@ -30,7 +30,7 @@ public class StringChallenge{
 				}
 			}
 
-			System.out.println("Array Sorted in Ascending Order :");
+			System.out.println("Array Sorted in Descending Order :");
 
 			for (int i=0;i<intArray.length ; i++) {
 				System.out.print(intArray[i]);
